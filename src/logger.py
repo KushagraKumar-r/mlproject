@@ -25,5 +25,5 @@ logging.basicConfig(
 #Ye batata hai:filename: kaha log save honge format: har log message ka format kya hoga (Time, line no, module name, level, message) level: kya type ke logs capture karne hain (INFO or above)
 
 
-if __name__=="__main__":
-    logging.info("Logging has started")
+# if __name__=="__main__":
+#     logging.info("Logging has started")
