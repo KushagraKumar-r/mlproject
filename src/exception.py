@@ -1,5 +1,6 @@
 import sys
 import logging
+from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):#Ye ek function hai jo error ke baare mein extra info nikalta hai
     _,_,exc_tb=error_detail.exc_info()#kaunsi line me error ayyi h 
@@ -21,9 +22,9 @@ class CustomException(Exception):#ye ek custom class h jo python ki exception cl
         return self.error_message
     
 
-# if __name__=="__main__":
-#     try:
-#         a=1/0
-#     except Exception as e:
-#         logging.info("Divide by Zero")
-#         raise CustomException(e,sys)
+if __name__=="__main__":
+    try:
+        a=1/0
+    except Exception as e:
+        logging.info("Divide by Zero")
+        raise CustomException(e,sys)
